@@ -24,6 +24,7 @@ export default function App() {
       <FlatList 
         data={exercises} //run the array of data as the .json file is an array
         contentContainerStyle={{ gap: 10 }}
+        keyExtractor={(item) => item.name} // tell FlatList how to extract the key/id of the item data, will NOT work with duplicate name
         renderItem={ ({ item }) => <ExerciseListItem item={item} /> }
           /* what this function render/put on the screen
               each view will be one exercise
