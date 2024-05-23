@@ -3,6 +3,7 @@ import { useLocalSearchParams } from 'expo-router'; // navigation package of the
 import exercises from '../../assets/data/exercises.json';
 import { Stack } from 'expo-router';
 import { useState } from 'react'
+
 export default function ExerciseDetailsScreen() {
     const params = useLocalSearchParams(); // search mechanism
 
